@@ -1,0 +1,91 @@
+{
+  "GameObjects": [
+  {
+    "ClassName": "GameObject",
+    "ModelFileName": "Data/Box/BoxStage.gltf",
+    "Name": "StageMap",
+    "Pos": "[0,0,0 ]",
+    "Scale": "[1,1,1]",
+    "Tag": 4
+  },
+  {
+    "ClassName": "GameObject",
+    "ModelFileName": "Data/Box/NormalObj.gltf",
+    "Name": "NormalObj",
+    "Pos": [14,10.5,0],
+    "Tag": 4
+  },
+  {
+    "ClassName": "Human",
+    "Name": "PlayerHuman",
+    "Prefab": "Data/Scene/Human.json",
+    "Tag": 3
+  },
+  {
+    "ClassName": "ActionGameProcess",
+    "Name": "GameProcess",
+    "Time": "0",
+    "TimeShow": "[0, 3, 0]"
+  },
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [3.5,10.5,0],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "LiftObj",
+  "Force": [0.10000000149011612,0,0],
+  "ModelFileName": "Data/Box/Lift.gltf",
+  "Name": "IIIIII",
+  "Pos": [3.4999642372131348,10.49992847442627,3.4999642372131348],
+  "Rot": [0,270,0],
+  "Scale": [0.99999994039535522,1,0.99999994039535522],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [10.5,10.5,3.5],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [14,10.5,3.5],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [14,10.5,-10.5],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "RotObj",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/L_TypeObjtType2.gltf",
+  "Name": "RotObj",
+  "Pos": [6.880000114440918,8.8100004196166992,0.019999999552965164],
+  "Rot": [0,270,0],
+  "Scale": [0.99999994039535522,1,0.99999994039535522],
+  "Tag": 4
+}
+]
+}

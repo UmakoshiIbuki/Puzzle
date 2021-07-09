@@ -1,0 +1,161 @@
+{
+  "GameObjects": [
+  {
+    "ClassName": "GameObject",
+    "ModelFileName": "Data/Box/BoxStage.gltf",
+    "Name": "StageMap",
+    "Pos": "[0,0,0 ]",
+    "Scale": "[1,1,1]",
+    "Tag": 4
+  },
+  {
+    "ClassName": "GameObject",
+    "ModelFileName": "Data/Box/NormalObj.gltf",
+    "Name": "NormalObj",
+    "Pos": [14,10.5,0],
+    "Tag": 4
+  },
+  {
+    "ClassName": "Human",
+    "Name": "PlayerHuman",
+    "Prefab": "Data/Scene/Human.json",
+    "Tag": 3
+  },
+  {
+    "ClassName": "ActionGameProcess",
+    "Name": "GameProcess",
+    "Time": "0",
+    "TimeShow": "[0, 3, 0]"
+  },
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [10.5,10.5,3.5],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [7,10.5,7],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [3.5,10.5,3.5],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [0,10.5,0],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [-3.5,10.5,-3.5],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [-7,10.5,0],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [-10.5,10.5,3.5],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [-17.5,10.5,0],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "GameObject",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [-14,10.5,0],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "Crystal",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Crystal/Crystal.gltf",
+  "Name": "Crystal",
+  "Pos": [-13.999873161315918,10.499660491943359,0],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 0
+},
+{
+  "ClassName": "CoinObj",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Crystal/Crystal.gltf",
+  "Name": "Coin",
+  "Pos": [6.9999284744262695,11.819665908813477,6.9999752044677734],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 0
+},
+{
+  "ClassName": "CoinObj",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Crystal/Crystal.gltf",
+  "Name": "Coin",
+  "Pos": [-3.4999711513519287,11.139837265014648,-3.4999864101409912],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 0
+},
+{
+  "ClassName": "CoinObj",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Crystal/Crystal.gltf",
+  "Name": "Coin",
+  "Pos": [-10.499858856201172,11.229788780212402,3.4999852180480957],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 0
+}
+]
+}

@@ -1,0 +1,11 @@
+{
+  "GameObjects": [
+    {
+      "ClassName": "StageSelect",
+      "Name": "StageSelect",
+      "ModelFileName": "Data/StageMap/StageMap.gltf",
+      "Scale": [ 0.1, 0.1, 0.1 ],
+      "Pos": [0,-1,0]
+    }
+  ]
+}

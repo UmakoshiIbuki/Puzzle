@@ -1,0 +1,9 @@
+{
+  "GameObjects": [
+    {
+      "ClassName": "Particle",
+      "Name": "Particle",
+      "Tex": "Data/Snow.png"
+    }
+  ]
+}

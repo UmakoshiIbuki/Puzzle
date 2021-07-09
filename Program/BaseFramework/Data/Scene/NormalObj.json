@@ -1,0 +1,8 @@
+{
+  "ClassName": "GameObject",
+  "ModelFileName": "Data/Box/NormalObj.gltf",
+  "Name": "NormalObj",
+  "Pos": [0,0,0 ],
+  "Scale": [ 1, 1, 1 ],
+  "Tag": 4
+}

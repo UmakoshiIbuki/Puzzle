@@ -1,0 +1,9 @@
+{
+  "ClassName": "LiftObj",
+  "Name": "IIIIII",
+  "Tag": 4,
+  "ModelFileName": "Data/Box/Lift.gltf",
+  "Pos": [ 0, 0, 0 ],
+  "Rot": [ 0, 180, 0 ],
+  "Scale": [ 1, 1, 1 ]
+}

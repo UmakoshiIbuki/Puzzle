@@ -1,0 +1,8 @@
+{
+  "ClassName": "ElevatorObj",
+  "Name": "ElevatorObj",
+  "Tag": 4,
+  "ModelFileName": "Data/Box/Elevator.gltf",
+  "Pos": [ 0, 1.2, 3 ],
+  "Scale": [ 1, 1, 1 ]
+}

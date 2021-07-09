@@ -1,0 +1,8 @@
+{
+  "ClassName": "Human",
+  "ModelFileName": "Data/Character/MrCube.gltf",
+  "Name": "MrCube",
+  "Pos": [ 14, 11, 0 ],
+  "Scale": [ 1, 1, 1 ],
+  "Tag": 3
+}

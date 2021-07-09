@@ -1,0 +1,166 @@
+{
+  "GameObjects": [
+    {
+      "ClassName": "GameObject",
+      "ModelFileName": "Data/Box/BoxStage.gltf",
+      "Name": "StageMap",
+      "Pos": "[0, 0, 0 ]",
+      "Scale": "[1,1,1]",
+      "Tag": 4
+    },
+    {
+      "ClassName": "GameObject",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/NormalObj.gltf",
+      "Name": "NormalObj",
+      "Pos": [ 14, 10.5, 0 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+ {
+      "ClassName": "Human",
+      "Name": "PlayerHuman",
+      "Tag": 3,
+      "Prefab": "Data/Scene/Human.json"
+    },
+    {
+      "ClassName": "ActionGameProcess",
+      "Name": "GameProcess",
+      "Time": "0",
+      "TimeShow": "[0, 3, 0]"
+    },
+
+    {
+      "ClassName": "GameObject",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/NormalObj.gltf",
+      "Name": "NormalObj",
+      "Pos": [ 10.5, 10.5, 0 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "GameObject",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/NormalObj.gltf",
+      "Name": "NormalObj",
+      "Pos": [ 7, 10.5, 0 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "GameObject",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/NormalObj.gltf",
+      "Name": "NormalObj",
+      "Pos": [ 3.5, 10.5, 0 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "GameObject",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/NormalObj.gltf",
+      "Name": "NormalObj",
+      "Pos": [ 3.5, 10.5, -3.5 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "GameObject",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/NormalObj.gltf",
+      "Name": "NormalObj",
+      "Pos": [ 3.5, 10.5, -14 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "Crystal",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/Box.gltf",
+      "Name": "Crystal",
+      "Pos": [ 3.4999580383300781, 11.24992561340332, -13.999689102172852 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 0.99999994039535522, 0.99999994039535522, 0.99999994039535522 ],
+      "Tag": 0
+    },
+    {
+      "ClassName": "LiftObj",
+      "Force": [ 0, 0, -0.10000000149011612 ],
+      "ModelFileName": "Data/Box/Lift.gltf",
+      "Name": "IIIIII",
+      "Pos": [ 3.5, 10.5, -7 ],
+      "Rot": [ 0, 360, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "GameObject",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/NormalObj.gltf",
+      "Name": "NormalObj",
+      "Pos": [ 0, 10.5, -3.5 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "GameObject",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/NormalObj.gltf",
+      "Name": "NormalObj",
+      "Pos": [ 7, 10.5, 3.5 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "CoinObj",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Crystal/Crystal.gltf",
+      "Name": "Coin",
+      "Pos": [ 7, 11.170000076293945, 3.5 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 0
+    },
+    {
+      "ClassName": "CoinObj",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Crystal/Crystal.gltf",
+      "Name": "Coin",
+      "Pos": [ 14, 1.1399999856948853, -3.5 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 0
+    },
+    {
+      "ClassName": "CoinObj",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Crystal/Crystal.gltf",
+      "Name": "Coin",
+      "Pos": [ 0, 11.109999656677246, -3.5 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 0
+    },
+    {
+      "ClassName": "ElevatorObj",
+      "Force": [ 0, 0.1, 0 ],
+      "ModelFileName": "Data/Box/Elevator.gltf",
+      "Name": "ElevatorObj",
+      "Pos": [ 14, 0.34999999403953552, -4 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    }
+   
+  ]
+}

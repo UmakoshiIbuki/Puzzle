@@ -1,0 +1,34 @@
+{
+  "GameObjects": [
+    {
+      "ClassName": "GameObject",
+      "ModelFileName": "Data/Box/BoxStage.gltf",
+      "Name": "StageMap",
+      "Pos": "[5, -5, 5 ]",
+      "Scale": "[1,1,1]",
+      "Tag": 4
+    },
+    {
+      "ClassName": "GameObject",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/NormalObj.gltf",
+      "Name": "NormalObj",
+      "Pos": [ 14, 10.5, 0 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+  {
+    "ClassName": "Human",
+    "Name": "PlayerHuman",
+    "Prefab": "Data/Scene/Human.json",
+    "Tag": 3
+  },
+  {
+    "ClassName": "ActionGameProcess",
+    "Name": "GameProcess",
+    "Time": "0",
+    "TimeShow": "[0, 3, 0]"
+  }
+]
+}

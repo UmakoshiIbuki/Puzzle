@@ -1,0 +1,185 @@
+{
+  "GameObjects": [
+
+    {
+      "ClassName": "GameObject",
+      "Name": "StageMap",
+      "Tag": 4,
+      "ModelFileName": "Data/Box/BoxStage.gltf",
+      "Pos": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ]
+    },
+    {
+      "ClassName": "Human",
+      "Name": "PlayerHuman",
+      "Tag": 3,
+      "Prefab": "Data/Scene/Human.json"
+    },
+   
+    {
+      "ClassName": "ActionGameProcess",
+      "Name": "GameProcess",
+      "Time": 0,
+      "TimeShow": [ 0, 3, 0 ]
+    },
+{
+  "ClassName": "LiftObj",
+  "ModelFileName": "Data/Box/LiftObj1.gltf",
+  "Name": "IIIIII",
+  "Pos": [0,-2,15],
+  "Rot": [180,-0,180],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "LiftObj",
+  "ModelFileName": "Data/Box/FloorObj.gltf",
+  "Name": "IIIIII",
+  "Pos": [1.6399999856948853,1,-9.0200004577636719],
+  "Rot": [0,-0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "LiftObj",
+  "ModelFileName": "Data/Box/FloorObj.gltf",
+  "Name": "IIIIII",
+  "Pos": [1.6399999856948853,1,-5.9200000762939453],
+  "Rot": [0,-0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "LiftObj",
+  "Force": [0,0,0.1],
+  "ModelFileName": "Data/Box/FloorObj.gltf",
+  "Name": "IIIIII",
+  "Pos": [0,-6.4600000381469727,12.000009536743164],
+  "Rot": [0,-0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "LiftObj",
+  "Force": [0.10000000149011612,0,0],
+  "ModelFileName": "Data/Box/FloorObj.gltf",
+  "Name": "IIIIII",
+  "Pos": [12.880012512207031,-6.059999942779541,-2.3399999141693115],
+  "Rot": [180,-89.999992370605469,180],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "LiftObj",
+  "Force": [0.10000000149011612,0,0],
+  "ModelFileName": "Data/Box/FloorObj.gltf",
+  "Name": "IIIIII",
+  "Pos": [7.2499933242797852,-6.2100000381469727,-2.9500000476837158],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "LiftObj",
+  "Force": [0,0,0.10000000149011612],
+  "ModelFileName": "Data/Box/FloorObj.gltf",
+  "Name": "IIIIII",
+  "Pos": [0,-6.25,9.2699995040893555],
+  "Rot": [ 0, 180, 0 ],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+{
+  "ClassName": "LiftObj",
+  "Force": [-0.10000000149011612,0,0],
+  "ModelFileName": "Data/Box/FloorObj.gltf",
+  "Name": "IIIIII",
+  "Pos": [3.7799999713897705,-6.1999998092651367,0.05000000074505806],
+  "Rot": [0,5156.6201171875,0],
+  "Scale": [0.99999988079071045,1,0.99999988079071045],
+  "Tag": 4
+},
+{
+  "ClassName": "LiftObj",
+  "Force": [0.10000000149011612,0,0],
+  "ModelFileName": "Data/Box/FloorObj.gltf",
+  "Name": "IIIIII",
+  "Pos": [-4.190000057220459,-6.2300000190734863,-6.4800000190734863],
+  "Rot": [0,270,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+},
+    {
+      "ClassName": "ElevatorObj",
+      "Force": [ 0, -0.1, 0 ],
+      "ModelFileName": "Data/Box/Elevator.gltf",
+      "Name": "ElevatorObj",
+      "Pos": [ 0, 3.1400001049041748, 10.359999656677246 ],
+      "Rot": [ 0, 0, 180 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "ElevatorObj",
+      "Force": [ 0, 0.10000000149011612, 0 ],
+      "ModelFileName": "Data/Box/Elevator.gltf",
+      "Name": "ElevatorObj",
+      "Pos": [ 0, -5.9499998092651367, 3 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "ElevatorObj",
+      "Force": [ 0, -0.10000000149011612, 0 ],
+      "ModelFileName": "Data/Box/Elevator.gltf",
+      "Name": "ElevatorObj",
+      "Pos": [ 0, 6.4099998474121094, 5.8899998664855957 ],
+      "Rot": [ 0, 0, 180 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "RotObj",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Box/L_TypeObj.gltf",
+      "Name": "RotObj",
+      "Pos": [ -2.4800000190734863, -4.1999998092651367, 3.2200000286102295 ],
+      "MoveTo": [ -2.4800000190734863, -4.1999998092651367, 3.2200000286102295 ],
+
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 4
+    },
+    {
+      "ClassName": "CoinObj",
+      "Force": [ 0, 0, 0 ],
+      "ModelFileName": "Data/Crystal/Crystal.gltf",
+      "Name": "Coin",
+      "Pos": [ 0.33000001311302185, -3.2799999713897705, 2.559999942779541 ],
+      "Rot": [ 0, 0, 0 ],
+      "Scale": [ 1, 1, 1 ],
+      "Tag": 0
+    },
+{
+  "ClassName": "RotObj",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/L_TypeObj.gltf",
+  "Name": "RotObj",
+  "Pos": [0,0.86533379554748535,2.1633343696594238],
+  "Rot": [0,0,0],
+  "Scale": [0.99999994039535522,1,0.99999994039535522],
+  "Tag": 4
+},
+{
+  "ClassName": "RotObj",
+  "Force": [0,0,0],
+  "ModelFileName": "Data/Box/L_TypeObj.gltf",
+  "Name": "RotObj",
+  "Pos": [7,1.2000000476837158,3],
+  "Rot": [0,0,0],
+  "Scale": [1,1,1],
+  "Tag": 4
+}
+]
+}
