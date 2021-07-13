@@ -31,6 +31,7 @@ public:
 
 	void AddObject(std::shared_ptr<GameObject> spObject);
 
+	std::string GetNowScene() { return m_nextSceneFilename; }
 	inline void SteTargetCamera(std::shared_ptr<CameraComponent>spCamera) { m_wpTaegetCamera = spCamera; }
 
 	void ImGuiUpdate();

@@ -124,7 +124,7 @@ void StageEditor::Camera()
 			m_spCameraComponent->SetCameraMatrix(m_CamMat);
 			Scene::GetInstance().SteTargetCamera(m_spCameraComponent);
 		}
-		if (ImGui::Button(u8"エディタカメラ2"))
+		ImGui::Checkbox("EditorCamera", &EditorCamera);
 		{
 
 			Scene::GetInstance().EditorCameraOnOff(EditorCamera);

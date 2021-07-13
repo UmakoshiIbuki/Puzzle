@@ -24,8 +24,8 @@ Scene::~Scene()
 //初期化
 void Scene::Init()
 {
-	//Scene::GetInstance().RequestChangeScene("Data/Scene/Title.json");
-	RequestChangeScene("Data/Scene/TestActionGame.json");
+	Scene::GetInstance().RequestChangeScene("Data/Scene/Title.json");
+	//RequestChangeScene("Data/Scene/TestActionGame.json");
 	//Scene::GetInstance().RequestChangeScene("Data/Scene/GameOver.json");
 
 	m_spScreenRT = std::make_shared<Texture>();

@@ -4,6 +4,12 @@
 class CharacterUpdate;
 class AinmationEffect;
 
+struct UIinfo
+{
+	bool  OneClick = true;
+	bool  ShowFlg = false;
+};
+
 class ActionGameProcess :public GameProcess
 {
 public:
@@ -24,6 +30,11 @@ private:
 	Vec3   m_TexPos;	//テクスチャの座標
 
 	std::shared_ptr<Texture> m_spExpTex;			//操作説明画面テクスチャ
+	UIinfo					 m_Exp;
+
+	std::shared_ptr<Texture> m_spMenuTex;
+	Matrix					 m_MenuMat;
+
 
 	float m_rotate;
 	float m_angle = 0;
@@ -34,14 +45,13 @@ private:
 	std::shared_ptr<GameObject> m_sptank;
 
 	std::shared_ptr<Texture> m_spCrystalsOncePlaceTex;
-
 	std::shared_ptr<Texture> m_spCrystalsTenthPlaceTex;
 
 	std::string m_number;
 	
 	bool m_canChange = false;
 	std::shared_ptr<Texture>   m_spPauseTex;
-	bool					   m_GoPause = false;
+	UIinfo					   m_Pause;
 
 	Matrix					   m_ReplayMat;
 	Vec3					   m_ReplayPos;
@@ -54,15 +64,14 @@ private:
 
 	Vec3                       MousePos;
 
-	bool					   m_OneTouch=true;
+	bool					   m_OneClick = true;
 
 	Math::Vector3 copy;
 
 	float					   m_scale0 = 0.7f;
 	float					   m_scale1 = 0.7f;
-	///////////////////////////////////////////////////////////////////////////////////////
+	float					   m_ExpScale = 0.7f;
+
 	int  m_CrystalsTenthPlace = 0;
 	int  m_CrystalsOncePlace = 0;
-	int  AttackCnt = 0;
-	//////////////////////////////////////////////////////////////////////////////////////
 };

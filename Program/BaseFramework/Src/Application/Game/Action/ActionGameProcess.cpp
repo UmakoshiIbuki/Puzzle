@@ -48,12 +48,15 @@ void ActionGameProcess::Draw2D()
 	SHADER.m_spriteShader.SetMatrix(m_TexMat);
 	SHADER.m_spriteShader.DrawTex(m_spCrystalsTenthPlaceTex.get(), 0, 0);
 
-	m_TexMat.CreateScalling(0.5, 0.5, 1);
+	m_TexMat.CreateScalling(m_ExpScale, m_ExpScale, 1);
 	m_TexMat.SetTranslation(m_TexPos);
 	SHADER.m_spriteShader.SetMatrix(m_TexMat);
 	SHADER.m_spriteShader.DrawTex(m_spExpTex.get(), 0, 0);
 
-	if (m_GoPause)
+	SHADER.m_spriteShader.SetMatrix(m_MenuMat);
+	SHADER.m_spriteShader.DrawTex(m_spMenuTex.get(), 0, 0);
+
+	if (m_Pause.ShowFlg)
 	{
 		m_spPauseTex = ResFac.GetTexture("Data/Texture/Stop.png");
 		SHADER.m_spriteShader.SetMatrix(m_StopMat);
@@ -91,38 +94,70 @@ void ActionGameProcess::Update()
 	MousePos.y = nowMousePos.y;
 	//改善//////////////////////////////////////////////////////////////////
 
+	if (GetAsyncKeyState('Q'))
+	{
+		if (!m_Exp.OneClick) { return; }
+		m_Exp.OneClick = false;
+		m_Exp.ShowFlg = !m_Exp.ShowFlg;
+		return;
+	}
+	else
+	{
+		m_Exp.OneClick = true;
+	}
+
+	if (m_Exp.ShowFlg)
+	{
+		if (m_ExpScale < 1) { m_ExpScale += 0.1f; }
+		m_TexPos.SetPos(0, 0, 0);
+		m_spExpTex = ResFac.GetTexture("Data/Texture/Expall.png");
+	}
+	else
+	{
+		if (m_ExpScale > 0)
+		{ 
+			m_ExpScale -= 0.1f;
+			return;
+		}
+		m_MenuMat.CreateScalling(0.5f, 0.5f, 1);
+		m_MenuMat.SetTranslation(600,  -300,  0);
+		m_spMenuTex = ResFac.GetTexture("Data/Texture/UITexture/UI_Exp.png");
+	}
+
+	if (GetAsyncKeyState('N'))
+	{
+		Scene::GetInstance().RequestChangeScene(Scene::GetInstance().GetNowScene());
+	}
 	if (GetAsyncKeyState('M') )
 	{
-		if (m_OneTouch)
+		if (m_OneClick)
 		{
-			m_OneTouch = false;
+			m_OneClick = false;
 			m_sphuman->SetBase(true);
 			ShowCursor(true);
 		}
 	}
 	else
 	{
-		m_OneTouch = true;
+		m_OneClick = true;
 	}
 
 	if (GetAsyncKeyState(VK_ESCAPE) & 0x8000)
 	{
-		if (m_OneTouch)
-		{
-			m_OneTouch = false;
-			m_GoPause = true;
-			m_sphuman->SetBase(true);
-			ShowCursor(true);
-			m_ReplayMat.SetTranslation(m_ReplayPos);
-			m_GoTitleMat.SetTranslation(m_GoTitlePos);
-		}
+		if (!m_Pause.OneClick) { return; }
+		m_Pause.OneClick = false;
+		m_Pause.ShowFlg = !m_Pause.ShowFlg;
+		m_sphuman->SetBase(m_Pause.ShowFlg);
+		ShowCursor(m_Pause.ShowFlg);
+		m_ReplayMat.SetTranslation(m_ReplayPos);
+		m_GoTitleMat.SetTranslation(m_GoTitlePos);
 	}
 	else
 	{
-		m_OneTouch = true;
+		m_Pause.OneClick = true;
 	}
 	
-	if (m_GoPause)
+	if (m_Pause.ShowFlg)
 	{
 		if (Collision2D(m_ReplayPos, MousePos, 300, 50))
 		{
@@ -131,7 +166,7 @@ void ActionGameProcess::Update()
 			{
 				ShowCursor(false);
 				m_sphuman->SetBase(false);
-				m_GoPause = false;
+				m_Pause.ShowFlg = false;
 				return;
 			}
 		}
@@ -153,17 +188,6 @@ void ActionGameProcess::Update()
 		{
 			if (m_scale1 > 0.7) { m_scale1 -= 0.01f; }
 		}
-	}
-
-	if (GetAsyncKeyState('Q'))
-	{
-		m_TexPos.SetPos(0, 0, 0);
-		m_spExpTex = ResFac.GetTexture("Data/Texture/Expall.png");
-	}
-	else
-	{
-		m_TexPos.SetPos(600, -300, 0);
-		m_spExpTex = ResFac.GetTexture("Data/Texture/UITexture/UI_Exp.png");
 	}
 
 	std::shared_ptr<Human> human = std::dynamic_pointer_cast<Human>(m_sphuman);

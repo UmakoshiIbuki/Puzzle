@@ -30,7 +30,7 @@ void Human::Deserialize(const json11::Json& jsonObj)
 	const std::vector<json11::Json>& rRot = jsonObj["Rot"].array_items();
 
 	m_CamMat.RotateZ((-10 * ToRadians));
-	m_CamMat.RotateY((-130 * ToRadians));
+	m_CamMat.RotateY((0 * ToRadians));
 	m_spCameraComponent->SetCameraMatrix(m_CamMat);
 
 	m_gravity = 0.008f;
